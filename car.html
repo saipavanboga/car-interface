@@ -61,6 +61,63 @@
             margin: 15px 0;
             font-weight: bold;
         }
+        header {
+    height: 70px;
+    background: linear-gradient(90deg, #0f172a, #1e293b);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: #1e293b;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    padding-top: 20px;
+    box-shadow: 4px 0 12px rgba(0,0,0,0.1);
+}
+
+/* LOGO */
+.sidebar .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* SIDEBAR LINKS */
+.sidebar a {
+    display: block;
+    color: #d1d5db;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+/* HOVER EFFECT */
+.sidebar a:hover {
+    background: #334155;
+    color: white;
+    border-left: 4px solid #38bdf8;
+    padding-left: 30px;
+}
 
         .features {
             margin: 20px 0;
@@ -69,6 +126,9 @@
         .features li {
             margin-bottom: 8px;
             color: #555;
+        }
+        header{
+            
         }
 
         .btn {
@@ -94,6 +154,22 @@
 </head>
 
 <body>
+    <header>Car showroom 
+    </header>
+    <!-- SIDEBAR -->
+<div class="sidebar">
+
+    <div class="logo">
+        🚗 CarZone
+    </div>
+
+    <a href="#">🏠 Home</a>
+    <a href="#">🚘 Cars</a>
+    <a href="#">💰 Pricing</a>
+    <a href="#">📞 Contact</a>
+    <a href="#">ℹ️ About</a>
+
+</div>
 
 <div class="container">
 
